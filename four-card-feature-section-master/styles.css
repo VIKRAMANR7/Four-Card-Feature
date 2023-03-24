@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  min-height: 100vh;
+  width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.header {
+  margin: 0rem auto 3rem auto;
+  max-width: 480px;
+  text-align: center;
+}
+.heading h1 {
+  font-size: 3.2rem;
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+.highlight {
+  margin-bottom: 1.5rem;
+  font-weight: 200;
+}
+.para p {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: hsl(229, 6%, 66%);
+}
+.card-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  height: 500px;
+}
+.second-col {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.card {
+  max-width: 300px;
+  height: 200px;
+  background-color: hsl(0, 0%, 100%);
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 0 1.6rem 3.2rem 0.6rem hsl(0, 0%, 87%);
+}
+.borderlength {
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  width: 97%;
+  margin: 0 auto;
+  position: relative;
+  top: -0.5rem;
+}
+.supervisor {
+  border-top: 6px solid hsl(180, 62%, 55%);
+}
+.team {
+  border-top: 6px solid hsl(0, 78%, 62%);
+}
+.karma {
+  border-top: 6px solid hsl(34, 97%, 64%);
+}
+.calc {
+  border-top: 6px solid hsl(212, 86%, 64%);
+}
+.card h2 {
+  padding: 1.5rem 0 0 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+.card p {
+  padding: 1rem 2rem 0 3rem;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  color: hsl(229, 6%, 66%);
+}
+.img img {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: block;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+@media screen and (max-width: 375px) {
+  .header {
+    margin: 6rem auto 4rem auto;
+    max-width: 335px;
+    text-align: center;
+  }
+  .heading h1 {
+    font-size: 2.6rem;
+  }
+  .highlight {
+    margin-bottom: 0;
+  }
+  .para p {
+    margin: 2rem 1rem 0 1rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+  }
+  .card-container {
+    flex-direction: column;
+    width: 375px;
+  }
+  .second-col {
+    gap: 0;
+  }
+  .first-col,
+  .second-col .card-two,
+  .second-col .card-three {
+    margin-bottom: 3rem;
+  }
+  .card {
+    width: 335px;
+    height: 250px;
+  }
+  .card h2 {
+    font-size: 2.6rem;
+  }
+  .card p {
+    font-size: 1.5rem;
+  }
+}
